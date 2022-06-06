@@ -1,6 +1,7 @@
 # Discrete Portfolio Numerical Optimization Using MGF Objective Functions
 
 In this notebook, I use numpy to implement a gradient descent algorithm on a constrained optimization problem. I seek to minimizethe Moment Generating Function evaluated at $t=1$ of a portfolio composed of multiple independent random variables with defined probability mass functions.  
+
 $$
 \min_{\vec{a}} \ln (M_Z (1)) \\ \text{subject to} \\ \\ E[Z] \geq \mu_{\text{min}}
 \\
@@ -8,6 +9,7 @@ $$
 $$
 
 $Z$ represents the portfolio (a random variable). Using the definition of the moment generating function of a discrete random variable, the optimization problem becomes the following equation.
+
 $$
 \min_{\vec{a}} \sum_{k=1}^{N} \ln (M_{X_k}(a_k)) \\ \text{subject to} \\ \\ E[Z] \geq \mu_{\text{min}}
 \\ \sum_{k=1}^{N} a_k = 1 \\ \sum_{k=1}^{N} |a_k| = 1
@@ -17,6 +19,7 @@ Where $X_k$ are the independent assets composing the portfolio and $a_k$ are the
 
 ## Intuition
 For a non-negative random variable $X$, the following bound holds:
+
 $$
 E[X^m] \leq (\frac{m}{et})^m M_X (t) \quad m > 0, \ t \geq 0
 $$
@@ -68,26 +71,27 @@ for i in range(len(ex)):
 ```
 
 
-    
-![png](output_3_0.png)
-    
-
-
-
-    
-![png](output_3_1.png)
+## Simulated Call Option
+![png](images/output_3_0.png)
     
 
 
 
+## Simulated Uniform Asset
+![png](images/output_3_1.png)
     
-![png](output_3_2.png)
+
+
+
+## Simulated Biased Coinflip Asset   
+![png](images/output_3_2.png)
     
 
 
 ## Gradient Calculations
 
 To convert the constrained problem to an unconstrained one, I define lagrangian.
+
 $$
 L(\vec{a}, \lambda_1, \lambda_2, \theta) = \sum_{k=1}^{N} \ln (M_{X_k}(a_k)) + \lambda_1 (\sum_{k=1}^{N} a_k - 1) + \lambda_2 (\sum_{k=1}^{N} |a_k| - 1) + \theta (E[Z] - \mu_{\text{min}} - s^2)
 $$
@@ -99,9 +103,11 @@ h(\vec{a}, \lambda_1, \lambda_2, \theta, s) = \frac{1}{2}[ \sum_{i=1}^{N} (\frac
 $$
 
 Where:
+
 $$
 \frac{\partial L}{\partial a_k} = \frac{\sum_{j=1}^{M} x_j e^{a_k x_j} p_{X_k} (x_j)}{\sum_{j=1}^{M} e^{a_k x_j} p_{X_k} (x_j)} + \lambda_1 + \text{sign}(a_k) \lambda_2 + E[X_k]\theta 
 $$
+
 $$
 \frac{\partial L}{\partial \lambda_1} = \sum_{i=1}^{N} a_i - 1
 $$
@@ -293,38 +299,38 @@ print("Constraint Gradients: ", cgrad_history[-1])
 ```
 
 
-    
-![png](output_7_0.png)
-    
-
-
-
-    
-![png](output_7_1.png)
+## Objective Function vs Steps
+![png](images/output_7_0.png)
     
 
 
 
-    
-![png](output_7_2.png)
-    
-
-
-
-    
-![png](output_7_3.png)
+## Portfolio Variables vs Steps
+![png](images/output_7_1.png)
     
 
 
 
-    
-![png](output_7_4.png)
+## Portfolio Variable Gradients vs Steps
+![png](images/output_7_2.png)
     
 
 
 
+## Slack Variable vs Steps
+![png](images/output_7_3.png)
     
-![png](output_7_5.png)
+
+
+
+## Constraint Variables vs Steps  
+![png](images/output_7_4.png)
+    
+
+
+
+## Constraint Variable Gradients vs Steps    
+![png](images/output_7_5.png)
     
 
 
@@ -338,49 +344,3 @@ print("Constraint Gradients: ", cgrad_history[-1])
 
 
 ### Not a single convolution was calculated!!!!!!!!
-
-
-```python
-#Line Search Sanity Check
-
-a1 = 0.0
-a2 = 1.0
-res = 1000
-objective_func = np.zeros((res, res))
-a_x = []
-for i in range(res):
-    a1 = (i/(res-1))
-    for j in range(res):
-        a2 = (j/(res-1))
-        if 1 - a1 - a2 < 0:
-            break
-        objective_func[i][j] = objective([a1, a2, 1-a1-a2])
-
-```
-
-
-```python
-plt.matshow(objective_func, cmap="viridis")
-plt.colorbar()
-plt.show()
-
-obj_max = np.max(objective_func)
-obj_argmax = np.unravel_index(np.argmax(objective_func, axis=None), 
-                              objective_func.shape)
-
-a1 = obj_argmax[0]/(res-1)
-a2 = obj_argmax[1]/(res-1)
-a3 = 1 - a1- a2
-print(obj_max)
-print([a1, a2, a3])
-```
-
-
-    
-![png](output_10_0.png)
-    
-
-
-    1.5588833892256737
-    [0.0, 1.0, 0.0]
-
