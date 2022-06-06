@@ -1,6 +1,6 @@
 # Discrete Portfolio Numerical Optimization Using MGF Objective Functions
 
-In this notebook, I use numpy to implement a gradient descent algorithm on a constrained optimization problem. I seek to minimizethe Moment Generating Function evaluated at $t=1$ of a portfolio composed of multiple independent random variables with defined probability mass functions.  
+In this notebook, I use numpy to implement a gradient descent algorithm on a constrained optimization problem. I seek to minimize the Moment Generating Function evaluated at $t=1$ of a portfolio composed of multiple independent random variables with defined probability mass functions.  
 
 $$
 \min_{\vec{a}} \ln (M_Z (1)) \\ \text{subject to} \\ \\ E[Z] \geq \mu_{\text{min}}
@@ -96,7 +96,7 @@ $$
 L(\vec{a}, \lambda_1, \lambda_2, \theta) = \sum_{k=1}^{N} \ln (M_{X_k}(a_k)) + \lambda_1 (\sum_{k=1}^{N} a_k - 1) + \lambda_2 (\sum_{k=1}^{N} |a_k| - 1) + \theta (E[Z] - \mu_{\text{min}} - s^2)
 $$
 
-The problem with the optmizing the lagrangian directly is that the solutions lie on saddle points; therefore, I modify the optimization problem to minimize the magnitude of the gradient of the lagrangian.
+The problem with optimizing the lagrangian directly is that the solutions lie on saddle points; therefore, I modify the optimization problem to minimize the magnitude of the gradient of the lagrangian.
 
 $$
 h(\vec{a}, \lambda_1, \lambda_2, \theta, s) = \frac{1}{2}[ \sum_{i=1}^{N} (\frac{\partial L}{\partial a_i})^2 + (\frac{\partial L}{\partial \lambda_1})^2 + (\frac{\partial L}{\partial \lambda_2})^2 + (\frac{\partial L}{\partial \theta})^2]
