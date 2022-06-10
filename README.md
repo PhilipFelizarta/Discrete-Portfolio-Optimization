@@ -35,3 +35,8 @@ h(\vec{w}, \lambda_1, \lambda_2, \theta) = \frac{1}{2}[\sum_k (\frac{\partial L}
 $$
 
 The notebook implements gradient descent to find the minimum of $h(.)$.
+
+# Results
+![](images/omeg_expect.png)
+
+![](images/port.png)
