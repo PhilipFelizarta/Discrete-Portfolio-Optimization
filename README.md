@@ -44,3 +44,7 @@ The notebook implements gradient descent to find the minimum of $h(.)$.
 # 2026 update
 
 See [`omega/README.md`](omega/README.md) (branch `omega-lazy-letf`): a review of these notebooks (the Omega gradient descent never uses the objective), an exact LP solver for max-Omega and the omega-risk frontier, and an application to leveraged-ETF lazy portfolios (TQQQ / SHNY / UGL / HYG).
+
+Follow-up in [`omega/IMPLIED.md`](omega/IMPLIED.md): marginals implied by the Jan-2028 option chains (PricedIn's
+`get_distr` formulation solved exactly as a QP), compounded-growth frontiers, and a walk-forward test with 10-year
+trailing refits.

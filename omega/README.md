@@ -97,3 +97,10 @@ How the joint distribution (marginals + copula) was built: [`COPULA.md`](COPULA.
 
 Run: `python omega/study.py && python omega/plots.py` (numpy, pandas, scipy ≥ 1.9, matplotlib).
 `results/summary.json` has every number, plus frontier weights.
+
+## Follow-up
+[`IMPLIED.md`](IMPLIED.md) adds three things:
+- **Option-implied marginals:** PricedIn's formulation solved exactly as a QP, with Q and P measures and the
+  historical copula.
+- **Compounded-growth frontiers:** realised growth vs the arithmetic mean.
+- **Walk-forward test:** a yearly refit on the trailing 10 years, 1997–2026.
