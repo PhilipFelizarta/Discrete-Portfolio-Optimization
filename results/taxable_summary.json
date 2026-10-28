@@ -1,0 +1,1377 @@
+{
+ "assumptions": {
+  "brackets": {
+   "top": {
+    "ord": 0.408,
+    "lt": 0.238,
+    "coll": 0.318
+   },
+   "mid": {
+    "ord": 0.24,
+    "lt": 0.15,
+    "coll": 0.24
+   }
+  },
+  "yield": {
+   "SPY": 0.013,
+   "QQQ": 0.006,
+   "TQQQ": 0.01,
+   "UPRO": 0.006,
+   "QLD": 0.005,
+   "SSO": 0.006,
+   "HYG": 0.065,
+   "GLD": 0,
+   "UGL": 0,
+   "SHNY": 0
+  },
+  "horizon_years": 20,
+  "hist_path": [
+   "1987-01",
+   "2026-10"
+  ],
+  "options_step_years": 1.2347707049965777
+ },
+ "portfolios": {
+  "100 SPY": {
+   "w": {
+    "SPY": 1.0
+   },
+   "views": {
+    "hist_path": {
+     "IRA, yearly": {
+      "growth": 0.1149351069799466,
+      "median_cagr": 0.1149351069799466,
+      "p10_cagr": 0.1149351069799466,
+      "p90_cagr": 0.1149351069799466,
+      "p_loss": 0.0,
+      "median_maxdd": -0.5127398380875681,
+      "p_dd_over_75": 0.0,
+      "tax_paid_share": 0.0
+     },
+     "taxable, never rebalance": {
+      "growth": 0.1050008812081925,
+      "median_cagr": 0.1050008812081925,
+      "p10_cagr": 0.1050008812081925,
+      "p90_cagr": 0.1050008812081925,
+      "p_loss": 0.0,
+      "median_maxdd": -0.5167524622154025,
+      "p_dd_over_75": 0.0,
+      "tax_paid_share": 0.2302114783120544
+     },
+     "taxable, yearly": {
+      "growth": 0.1050008812081925,
+      "median_cagr": 0.1050008812081925,
+      "p10_cagr": 0.1050008812081925,
+      "p90_cagr": 0.1050008812081925,
+      "p_loss": 0.0,
+      "median_maxdd": -0.5167524622154025,
+      "p_dd_over_75": 0.0,
+      "tax_paid_share": 0.2302114783120544
+     },
+     "taxable, yearly + harvest": {
+      "growth": 0.1050008812081925,
+      "median_cagr": 0.1050008812081925,
+      "p10_cagr": 0.1050008812081925,
+      "p90_cagr": 0.1050008812081925,
+      "p_loss": 0.0,
+      "median_maxdd": -0.5167524622154025,
+      "p_dd_over_75": 0.0,
+      "tax_paid_share": 0.2302114783120544
+     },
+     "taxable, 10pp band + harvest": {
+      "growth": 0.1050008812081925,
+      "median_cagr": 0.1050008812081925,
+      "p10_cagr": 0.1050008812081925,
+      "p90_cagr": 0.1050008812081925,
+      "p_loss": 0.0,
+      "median_maxdd": -0.5167524622154025,
+      "p_dd_over_75": 0.0,
+      "tax_paid_share": 0.2302114783120544
+     },
+     "taxable mid bracket, yearly + harvest": {
+      "growth": 0.108854237968039,
+      "median_cagr": 0.108854237968039,
+      "p10_cagr": 0.108854237968039,
+      "p90_cagr": 0.108854237968039,
+      "p_loss": 0.0,
+      "median_maxdd": -0.5152706745390805,
+      "p_dd_over_75": 0.0,
+      "tax_paid_share": 0.14617041588464744
+     }
+    },
+    "hist_mc": {
+     "IRA, yearly": {
+      "growth": 0.11519716777354644,
+      "median_cagr": 0.11654825213842225,
+      "p10_cagr": 0.0662654611959908,
+      "p90_cagr": 0.1646646149582355,
+      "p_loss": 0.0021,
+      "median_maxdd": -0.3442734109222047,
+      "p_dd_over_75": 0.0017,
+      "tax_paid_share": 0.0
+     },
+     "taxable, never rebalance": {
+      "growth": 0.1011388754278779,
+      "median_cagr": 0.10181398846168438,
+      "p10_cagr": 0.05521200489724362,
+      "p90_cagr": 0.14787874977182353,
+      "p_loss": 0.0035,
+      "median_maxdd": -0.3471659512244353,
+      "p_dd_over_75": 0.0019,
+      "tax_paid_share": 0.20682722513120078
+     },
+     "taxable, yearly": {
+      "growth": 0.1011388754278779,
+      "median_cagr": 0.10181398846168438,
+      "p10_cagr": 0.05521200489724362,
+      "p90_cagr": 0.14787874977182353,
+      "p_loss": 0.0035,
+      "median_maxdd": -0.3471659512244353,
+      "p_dd_over_75": 0.0019,
+      "tax_paid_share": 0.20682722513120078
+     },
+     "taxable, yearly + harvest": {
+      "growth": 0.10115376845086779,
+      "median_cagr": 0.10181398846168438,
+      "p10_cagr": 0.05524260375189654,
+      "p90_cagr": 0.14787874977182353,
+      "p_loss": 0.0035,
+      "median_maxdd": -0.3471659512244353,
+      "p_dd_over_75": 0.0019,
+      "tax_paid_share": 0.20673124402525928
+     },
+     "taxable, 10pp band + harvest": {
+      "growth": 0.10115376845086779,
+      "median_cagr": 0.10181398846168438,
+      "p10_cagr": 0.05524260375189654,
+      "p90_cagr": 0.14787874977182353,
+      "p_loss": 0.0035,
+      "median_maxdd": -0.3471659512244353,
+      "p_dd_over_75": 0.0019,
+      "tax_paid_share": 0.20673124402525928
+     },
+     "taxable mid bracket, yearly + harvest": {
+      "growth": 0.10658282176926338,
+      "median_cagr": 0.10749178905973227,
+      "p10_cagr": 0.059428158930913334,
+      "p90_cagr": 0.1544349944108324,
+      "p_loss": 0.0028,
+      "median_maxdd": -0.34594609659377445,
+      "p_dd_over_75": 0.0017,
+      "tax_paid_share": 0.13145639067252857
+     }
+    },
+    "options_mc": {
+     "IRA, yearly": {
+      "growth": 0.08225196722518731,
+      "median_cagr": 0.08498168056599002,
+      "p10_cagr": 0.03242331918216557,
+      "p90_cagr": 0.1312588141843943,
+      "p_loss": 0.0228,
+      "median_maxdd": -0.24563616358249257,
+      "p_dd_over_75": 0.0104,
+      "tax_paid_share": 0.0
+     },
+     "taxable, never rebalance": {
+      "growth": 0.07056270666387592,
+      "median_cagr": 0.07241804625906405,
+      "p10_cagr": 0.02597316174114942,
+      "p90_cagr": 0.1160224616846309,
+      "p_loss": 0.0261,
+      "median_maxdd": -0.2514163814272592,
+      "p_dd_over_75": 0.0118,
+      "tax_paid_share": 0.18551271522665475
+     },
+     "taxable, yearly": {
+      "growth": 0.07056270666387592,
+      "median_cagr": 0.07241804625906405,
+      "p10_cagr": 0.02597316174114942,
+      "p90_cagr": 0.1160224616846309,
+      "p_loss": 0.0261,
+      "median_maxdd": -0.2514163814272592,
+      "p_dd_over_75": 0.0118,
+      "tax_paid_share": 0.18551271522665475
+     },
+     "taxable, yearly + harvest": {
+      "growth": 0.07058249253057285,
+      "median_cagr": 0.07241804625906405,
+      "p10_cagr": 0.025987669531285368,
+      "p90_cagr": 0.1160224616846309,
+      "p_loss": 0.0261,
+      "median_maxdd": -0.2514163814272592,
+      "p_dd_over_75": 0.0118,
+      "tax_paid_share": 0.18536417468925342
+     },
+     "taxable, 10pp band + harvest": {
+      "growth": 0.07058249253057285,
+      "median_cagr": 0.07241804625906405,
+      "p10_cagr": 0.025987669531285368,
+      "p90_cagr": 0.1160224616846309,
+      "p_loss": 0.0261,
+      "median_maxdd": -0.2514163814272592,
+      "p_dd_over_75": 0.0118,
+      "tax_paid_share": 0.18536417468925342
+     },
+     "taxable mid bracket, yearly + harvest": {
+      "growth": 0.0750626183346136,
+      "median_cagr": 0.07724179825995513,
+      "p10_cagr": 0.02836652821161795,
+      "p90_cagr": 0.12193542923024975,
+      "p_loss": 0.0245,
+      "median_maxdd": -0.2492561208924316,
+      "p_dd_over_75": 0.0112,
+      "tax_paid_share": 0.1179957312563702
+     }
+    }
+   }
+  },
+  "100 QQQ": {
+   "w": {
+    "QQQ": 1.0
+   },
+   "views": {
+    "hist_path": {
+     "IRA, yearly": {
+      "growth": 0.1541335321173606,
+      "median_cagr": 0.1541335321173606,
+      "p10_cagr": 0.1541335321173606,
+      "p90_cagr": 0.1541335321173606,
+      "p_loss": 0.0,
+      "median_maxdd": -0.810497356649448,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.0
+     },
+     "taxable, never rebalance": {
+      "growth": 0.14503210916466439,
+      "median_cagr": 0.14503210916466439,
+      "p10_cagr": 0.14503210916466439,
+      "p90_cagr": 0.14503210916466439,
+      "p_loss": 0.0,
+      "median_maxdd": -0.8113083209347547,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.2354879999581619
+     },
+     "taxable, yearly": {
+      "growth": 0.14503210916466439,
+      "median_cagr": 0.14503210916466439,
+      "p10_cagr": 0.14503210916466439,
+      "p90_cagr": 0.14503210916466439,
+      "p_loss": 0.0,
+      "median_maxdd": -0.8113083209347547,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.2354879999581619
+     },
+     "taxable, yearly + harvest": {
+      "growth": 0.14503210916466439,
+      "median_cagr": 0.14503210916466439,
+      "p10_cagr": 0.14503210916466439,
+      "p90_cagr": 0.14503210916466439,
+      "p_loss": 0.0,
+      "median_maxdd": -0.8113083209347547,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.2354879999581619
+     },
+     "taxable, 10pp band + harvest": {
+      "growth": 0.14503210916466439,
+      "median_cagr": 0.14503210916466439,
+      "p10_cagr": 0.14503210916466439,
+      "p90_cagr": 0.14503210916466439,
+      "p_loss": 0.0,
+      "median_maxdd": -0.8113083209347547,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.2354879999581619
+     },
+     "taxable mid bracket, yearly + harvest": {
+      "growth": 0.1486236146989119,
+      "median_cagr": 0.1486236146989119,
+      "p10_cagr": 0.1486236146989119,
+      "p90_cagr": 0.1486236146989119,
+      "p_loss": 0.0,
+      "median_maxdd": -0.8110086624292205,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.14881481109699632
+     }
+    },
+    "hist_mc": {
+     "IRA, yearly": {
+      "growth": 0.15357333357912561,
+      "median_cagr": 0.15621418104627152,
+      "p10_cagr": 0.0717297051770563,
+      "p90_cagr": 0.23724198776724137,
+      "p_loss": 0.0099,
+      "median_maxdd": -0.5108861986404309,
+      "p_dd_over_75": 0.0778,
+      "tax_paid_share": 0.0
+     },
+     "taxable, never rebalance": {
+      "growth": 0.13910551466955323,
+      "median_cagr": 0.14082552083230168,
+      "p10_cagr": 0.06085073145317496,
+      "p90_cagr": 0.21978703842199063,
+      "p_loss": 0.0107,
+      "median_maxdd": -0.5126158278966011,
+      "p_dd_over_75": 0.0789,
+      "tax_paid_share": 0.22266748273166725
+     },
+     "taxable, yearly": {
+      "growth": 0.13910551466955323,
+      "median_cagr": 0.14082552083230168,
+      "p10_cagr": 0.06085073145317496,
+      "p90_cagr": 0.21978703842199063,
+      "p_loss": 0.0107,
+      "median_maxdd": -0.5126158278966011,
+      "p_dd_over_75": 0.0789,
+      "tax_paid_share": 0.22266748273166725
+     },
+     "taxable, yearly + harvest": {
+      "growth": 0.13911461117912516,
+      "median_cagr": 0.1408298825336268,
+      "p10_cagr": 0.06089276176061905,
+      "p90_cagr": 0.21978711592675731,
+      "p_loss": 0.0107,
+      "median_maxdd": -0.5126158278966011,
+      "p_dd_over_75": 0.0789,
+      "tax_paid_share": 0.22262638780904945
+     },
+     "taxable, 10pp band + harvest": {
+      "growth": 0.13911461117912516,
+      "median_cagr": 0.1408298825336268,
+      "p10_cagr": 0.06089276176061905,
+      "p90_cagr": 0.21978711592675731,
+      "p_loss": 0.0107,
+      "median_maxdd": -0.5126158278966011,
+      "p_dd_over_75": 0.0789,
+      "tax_paid_share": 0.22262638780904945
+     },
+     "taxable mid bracket, yearly + harvest": {
+      "growth": 0.14479813004219183,
+      "median_cagr": 0.14683634959893088,
+      "p10_cagr": 0.06511177703761221,
+      "p90_cagr": 0.22669787801722402,
+      "p_loss": 0.0102,
+      "median_maxdd": -0.5120900408738993,
+      "p_dd_over_75": 0.0782,
+      "tax_paid_share": 0.1408581470631149
+     }
+    },
+    "options_mc": {
+     "IRA, yearly": {
+      "growth": 0.06695560490487493,
+      "median_cagr": 0.07040070883409565,
+      "p10_cagr": -0.004616748153961049,
+      "p90_cagr": 0.13920001100944138,
+      "p_loss": 0.118,
+      "median_maxdd": -0.4044376043385464,
+      "p_dd_over_75": 0.0989,
+      "tax_paid_share": 0.0
+     },
+     "taxable, never rebalance": {
+      "growth": 0.05754805354289555,
+      "median_cagr": 0.05963761890064539,
+      "p10_cagr": -0.00616802259738446,
+      "p90_cagr": 0.12424494295173982,
+      "p_loss": 0.1222,
+      "median_maxdd": -0.40771060111950297,
+      "p_dd_over_75": 0.1018,
+      "tax_paid_share": 0.17354805637262166
+     },
+     "taxable, yearly": {
+      "growth": 0.05754805354289555,
+      "median_cagr": 0.05963761890064539,
+      "p10_cagr": -0.00616802259738446,
+      "p90_cagr": 0.12424494295173982,
+      "p_loss": 0.1222,
+      "median_maxdd": -0.40771060111950297,
+      "p_dd_over_75": 0.1018,
+      "tax_paid_share": 0.17354805637262166
+     },
+     "taxable, yearly + harvest": {
+      "growth": 0.05756420377031401,
+      "median_cagr": 0.05963761890064539,
+      "p10_cagr": -0.00616802259738446,
+      "p90_cagr": 0.12424806809100468,
+      "p_loss": 0.1222,
+      "median_maxdd": -0.40771060111950297,
+      "p_dd_over_75": 0.1018,
+      "tax_paid_share": 0.17325571804569262
+     },
+     "taxable, 10pp band + harvest": {
+      "growth": 0.05756420377031401,
+      "median_cagr": 0.05963761890064539,
+      "p10_cagr": -0.00616802259738446,
+      "p90_cagr": 0.12424806809100468,
+      "p_loss": 0.1222,
+      "median_maxdd": -0.40771060111950297,
+      "p_dd_over_75": 0.1018,
+      "tax_paid_share": 0.17325571804569262
+     },
+     "taxable mid bracket, yearly + harvest": {
+      "growth": 0.06120565866010655,
+      "median_cagr": 0.06384147371623587,
+      "p10_cagr": -0.0055739844122637515,
+      "p90_cagr": 0.13010720706969958,
+      "p_loss": 0.1211,
+      "median_maxdd": -0.4064429954669692,
+      "p_dd_over_75": 0.1004,
+      "tax_paid_share": 0.10987809200719743
+     }
+    }
+   }
+  },
+  "30 TQQQ/30 UGL/40 HYG (green)": {
+   "w": {
+    "HYG": 0.4,
+    "TQQQ": 0.3,
+    "UGL": 0.3
+   },
+   "views": {
+    "hist_path": {
+     "IRA, yearly": {
+      "growth": 0.1748271441546225,
+      "median_cagr": 0.1748271441546225,
+      "p10_cagr": 0.1748271441546225,
+      "p90_cagr": 0.1748271441546225,
+      "p_loss": 0.0,
+      "median_maxdd": -0.6311111830123111,
+      "p_dd_over_75": 0.0,
+      "tax_paid_share": 0.0
+     },
+     "taxable, never rebalance": {
+      "growth": 0.09805949167096116,
+      "median_cagr": 0.09805949167096116,
+      "p10_cagr": 0.09805949167096116,
+      "p90_cagr": 0.09805949167096116,
+      "p_loss": 0.0,
+      "median_maxdd": -0.9953734999679302,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.2506328111574817
+     },
+     "taxable, yearly": {
+      "growth": 0.1402548670085376,
+      "median_cagr": 0.1402548670085376,
+      "p10_cagr": 0.1402548670085376,
+      "p90_cagr": 0.1402548670085376,
+      "p_loss": 0.0,
+      "median_maxdd": -0.6424211370949,
+      "p_dd_over_75": 0.0,
+      "tax_paid_share": 0.2248020380079055
+     },
+     "taxable, yearly + harvest": {
+      "growth": 0.14278283613732853,
+      "median_cagr": 0.14278283613732853,
+      "p10_cagr": 0.14278283613732853,
+      "p90_cagr": 0.14278283613732853,
+      "p_loss": 0.0,
+      "median_maxdd": -0.6424211370949001,
+      "p_dd_over_75": 0.0,
+      "tax_paid_share": 0.2225553562629574
+     },
+     "taxable, 10pp band + harvest": {
+      "growth": 0.1120530460257733,
+      "median_cagr": 0.1120530460257733,
+      "p10_cagr": 0.1120530460257733,
+      "p90_cagr": 0.1120530460257733,
+      "p_loss": 0.0,
+      "median_maxdd": -0.8062785046184092,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.31452436921949256
+     },
+     "taxable mid bracket, yearly + harvest": {
+      "growth": 0.15523553832704617,
+      "median_cagr": 0.15523553832704617,
+      "p10_cagr": 0.15523553832704617,
+      "p90_cagr": 0.15523553832704617,
+      "p_loss": 0.0,
+      "median_maxdd": -0.6377851906767034,
+      "p_dd_over_75": 0.0,
+      "tax_paid_share": 0.13869139779628892
+     }
+    },
+    "hist_mc": {
+     "IRA, yearly": {
+      "growth": 0.15577714040440468,
+      "median_cagr": 0.15571519753689433,
+      "p10_cagr": 0.07042911861619233,
+      "p90_cagr": 0.24769460074451405,
+      "p_loss": 0.009,
+      "median_maxdd": -0.5135515122171854,
+      "p_dd_over_75": 0.0365,
+      "tax_paid_share": 0.0
+     },
+     "taxable, never rebalance": {
+      "growth": 0.13436151292754953,
+      "median_cagr": 0.09822248587766244,
+      "p10_cagr": 0.004157067017823109,
+      "p90_cagr": 0.35058016302082773,
+      "p_loss": 0.0832,
+      "median_maxdd": -0.7884587837750825,
+      "p_dd_over_75": 0.578,
+      "tax_paid_share": 0.2401436538474804
+     },
+     "taxable, yearly": {
+      "growth": 0.12192675661225186,
+      "median_cagr": 0.12216677464731085,
+      "p10_cagr": 0.04904273834963113,
+      "p90_cagr": 0.20044073556934225,
+      "p_loss": 0.0172,
+      "median_maxdd": -0.5327536826896747,
+      "p_dd_over_75": 0.0525,
+      "tax_paid_share": 0.23714331487689178
+     },
+     "taxable, yearly + harvest": {
+      "growth": 0.12362579813666953,
+      "median_cagr": 0.12378595035811032,
+      "p10_cagr": 0.05084129246882547,
+      "p90_cagr": 0.20173456625795952,
+      "p_loss": 0.0164,
+      "median_maxdd": -0.5312957009047797,
+      "p_dd_over_75": 0.0515,
+      "tax_paid_share": 0.2350204961983891
+     },
+     "taxable, 10pp band + harvest": {
+      "growth": 0.106077953854785,
+      "median_cagr": 0.10868799935536967,
+      "p10_cagr": 0.037158880446784656,
+      "p90_cagr": 0.1753663741064517,
+      "p_loss": 0.026,
+      "median_maxdd": -0.5597396334936156,
+      "p_dd_over_75": 0.1124,
+      "tax_paid_share": 0.300677368252444
+     },
+     "taxable mid bracket, yearly + harvest": {
+      "growth": 0.13613560844540235,
+      "median_cagr": 0.13620643940981556,
+      "p10_cagr": 0.05868813232140478,
+      "p90_cagr": 0.21947582057929893,
+      "p_loss": 0.013,
+      "median_maxdd": -0.5234524354182057,
+      "p_dd_over_75": 0.0453,
+      "tax_paid_share": 0.14906531146605528
+     }
+    },
+    "options_mc": {
+     "IRA, yearly": {
+      "growth": 0.04202367179767054,
+      "median_cagr": 0.03793029494552442,
+      "p10_cagr": -0.032055341536200425,
+      "p90_cagr": 0.12549763240106315,
+      "p_loss": 0.2417,
+      "median_maxdd": -0.4833468376941714,
+      "p_dd_over_75": 0.0888,
+      "tax_paid_share": 0.0
+     },
+     "taxable, never rebalance": {
+      "growth": 0.0148391566154115,
+      "median_cagr": 0.006195414636057185,
+      "p10_cagr": -0.025471317972781213,
+      "p90_cagr": 0.06719896912147712,
+      "p_loss": 0.4049,
+      "median_maxdd": -0.5224960712058873,
+      "p_dd_over_75": 0.1123,
+      "tax_paid_share": 0.2766536827019035
+     },
+     "taxable, yearly": {
+      "growth": 0.024127281261256284,
+      "median_cagr": 0.021842457890971414,
+      "p10_cagr": -0.0456990916491878,
+      "p90_cagr": 0.09950764946711627,
+      "p_loss": 0.3319,
+      "median_maxdd": -0.5248680530392102,
+      "p_dd_over_75": 0.1303,
+      "tax_paid_share": 0.2255973000438924
+     },
+     "taxable, yearly + harvest": {
+      "growth": 0.025195743868074383,
+      "median_cagr": 0.023079005652124236,
+      "p10_cagr": -0.045067001876087594,
+      "p90_cagr": 0.10057129098324809,
+      "p_loss": 0.3251,
+      "median_maxdd": -0.5234608565917194,
+      "p_dd_over_75": 0.1289,
+      "tax_paid_share": 0.2162792729178557
+     },
+     "taxable, 10pp band + harvest": {
+      "growth": 0.024994267982253366,
+      "median_cagr": 0.022971993271303594,
+      "p10_cagr": -0.04526065967188519,
+      "p90_cagr": 0.10075419867564886,
+      "p_loss": 0.3253,
+      "median_maxdd": -0.5232566762096151,
+      "p_dd_over_75": 0.1277,
+      "tax_paid_share": 0.21871695622541354
+     },
+     "taxable mid bracket, yearly + harvest": {
+      "growth": 0.03196854379219118,
+      "median_cagr": 0.02906148613351801,
+      "p10_cagr": -0.039707234241745895,
+      "p90_cagr": 0.11074960824690062,
+      "p_loss": 0.2891,
+      "median_maxdd": -0.5060644907816165,
+      "p_dd_over_75": 0.1091,
+      "tax_paid_share": 0.13495211311571137
+     }
+    }
+   }
+  },
+  "growth-max, history": {
+   "w": {
+    "TQQQ": 0.757,
+    "GLD": 0.243
+   },
+   "views": {
+    "hist_path": {
+     "IRA, yearly": {
+      "growth": 0.23901181254815554,
+      "median_cagr": 0.23901181254815554,
+      "p10_cagr": 0.23901181254815554,
+      "p90_cagr": 0.23901181254815554,
+      "p_loss": 0.0,
+      "median_maxdd": -0.9643804519715188,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.0
+     },
+     "taxable, never rebalance": {
+      "growth": 0.13266394814293783,
+      "median_cagr": 0.13266394814293783,
+      "p10_cagr": 0.13266394814293783,
+      "p90_cagr": 0.13266394814293783,
+      "p_loss": 0.0,
+      "median_maxdd": -0.999141009208681,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.2436945957041397
+     },
+     "taxable, yearly": {
+      "growth": 0.21741758118352192,
+      "median_cagr": 0.21741758118352192,
+      "p10_cagr": 0.21741758118352192,
+      "p90_cagr": 0.21741758118352192,
+      "p_loss": 0.0,
+      "median_maxdd": -0.9646882473490146,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.24326417880921
+     },
+     "taxable, yearly + harvest": {
+      "growth": 0.2197038133389239,
+      "median_cagr": 0.2197038133389239,
+      "p10_cagr": 0.2197038133389239,
+      "p90_cagr": 0.2197038133389239,
+      "p_loss": 0.0,
+      "median_maxdd": -0.9646882473490146,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.24313622272970245
+     },
+     "taxable, 10pp band + harvest": {
+      "growth": 0.18116062656629403,
+      "median_cagr": 0.18116062656629403,
+      "p10_cagr": 0.18116062656629403,
+      "p90_cagr": 0.18116062656629403,
+      "p_loss": 0.0,
+      "median_maxdd": -0.991551326479405,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.2592793157925569
+     },
+     "taxable mid bracket, yearly + harvest": {
+      "growth": 0.22702834313077433,
+      "median_cagr": 0.22702834313077433,
+      "p10_cagr": 0.22702834313077433,
+      "p90_cagr": 0.22702834313077433,
+      "p_loss": 0.0,
+      "median_maxdd": -0.964561661851812,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.15923464212640742
+     }
+    },
+    "hist_mc": {
+     "IRA, yearly": {
+      "growth": 0.21124479970700913,
+      "median_cagr": 0.2157845782499455,
+      "p10_cagr": 0.0266841763255006,
+      "p90_cagr": 0.4201418010566655,
+      "p_loss": 0.0688,
+      "median_maxdd": -0.8359806416218462,
+      "p_dd_over_75": 0.7378,
+      "tax_paid_share": 0.0
+     },
+     "taxable, never rebalance": {
+      "growth": 0.16399260705589477,
+      "median_cagr": 0.1395580391439978,
+      "p10_cagr": -0.009490125516935653,
+      "p90_cagr": 0.42110418052884624,
+      "p_loss": 0.133,
+      "median_maxdd": -0.8909003948894485,
+      "p_dd_over_75": 0.8792,
+      "tax_paid_share": 0.23854405158836356
+     },
+     "taxable, yearly": {
+      "growth": 0.1863870927246681,
+      "median_cagr": 0.18951497620337968,
+      "p10_cagr": 0.014373194913424696,
+      "p90_cagr": 0.38144485598803685,
+      "p_loss": 0.0808,
+      "median_maxdd": -0.8436832943469807,
+      "p_dd_over_75": 0.7529,
+      "tax_paid_share": 0.2311368951941879
+     },
+     "taxable, yearly + harvest": {
+      "growth": 0.18978235714224406,
+      "median_cagr": 0.19278497648448648,
+      "p10_cagr": 0.018996032029050338,
+      "p90_cagr": 0.3837836454142554,
+      "p_loss": 0.0749,
+      "median_maxdd": -0.8403695961118558,
+      "p_dd_over_75": 0.7483,
+      "tax_paid_share": 0.230495515348085
+     },
+     "taxable, 10pp band + harvest": {
+      "growth": 0.169559559164205,
+      "median_cagr": 0.1779258537322917,
+      "p10_cagr": -0.013575784481979247,
+      "p90_cagr": 0.3748288228641543,
+      "p_loss": 0.1171,
+      "median_maxdd": -0.8832674199550019,
+      "p_dd_over_75": 0.8282,
+      "tax_paid_share": 0.2579388987623657
+     },
+     "taxable mid bracket, yearly + harvest": {
+      "growth": 0.19767455902881356,
+      "median_cagr": 0.2013487246523674,
+      "p10_cagr": 0.021812457762303356,
+      "p90_cagr": 0.3971740492312972,
+      "p_loss": 0.0728,
+      "median_maxdd": -0.8389556304853297,
+      "p_dd_over_75": 0.7449,
+      "tax_paid_share": 0.15023014076690622
+     }
+    },
+    "options_mc": {
+     "IRA, yearly": {
+      "growth": -0.009315290422446613,
+      "median_cagr": -0.00930033829469523,
+      "p10_cagr": -0.13596546899998974,
+      "p90_cagr": 0.13389851496593896,
+      "p_loss": 0.5359,
+      "median_maxdd": -0.8426004500068025,
+      "p_dd_over_75": 0.6791,
+      "tax_paid_share": 0.0
+     },
+     "taxable, never rebalance": {
+      "growth": -0.01595277284359059,
+      "median_cagr": -0.02007672925160931,
+      "p10_cagr": -0.1001010144732244,
+      "p90_cagr": 0.08834955961036274,
+      "p_loss": 0.6222,
+      "median_maxdd": -0.8129404566856497,
+      "p_dd_over_75": 0.6471,
+      "tax_paid_share": 0.13504945533694424
+     },
+     "taxable, yearly": {
+      "growth": -0.020034564793516715,
+      "median_cagr": -0.017849049138104207,
+      "p10_cagr": -0.14277610874898214,
+      "p90_cagr": 0.1143758050932389,
+      "p_loss": 0.5731,
+      "median_maxdd": -0.8561776993667304,
+      "p_dd_over_75": 0.7086,
+      "tax_paid_share": 0.22408548153850782
+     },
+     "taxable, yearly + harvest": {
+      "growth": -0.017028618958105302,
+      "median_cagr": -0.014120606539226381,
+      "p10_cagr": -0.1398912549205409,
+      "p90_cagr": 0.11630194920457594,
+      "p_loss": 0.5574,
+      "median_maxdd": -0.8497162370128077,
+      "p_dd_over_75": 0.6931,
+      "tax_paid_share": 0.2007066425499414
+     },
+     "taxable, 10pp band + harvest": {
+      "growth": -0.018821180644574064,
+      "median_cagr": -0.01587781894224695,
+      "p10_cagr": -0.14194198404181554,
+      "p90_cagr": 0.11646236810106578,
+      "p_loss": 0.5665,
+      "median_maxdd": -0.8552558657107429,
+      "p_dd_over_75": 0.707,
+      "tax_paid_share": 0.19832094790182223
+     },
+     "taxable mid bracket, yearly + harvest": {
+      "growth": -0.01415232715157629,
+      "median_cagr": -0.012362191441453093,
+      "p10_cagr": -0.13822616496556822,
+      "p90_cagr": 0.12267776733463191,
+      "p_loss": 0.5511,
+      "median_maxdd": -0.8468952726914809,
+      "p_dd_over_75": 0.6875,
+      "tax_paid_share": 0.13113624782301592
+     }
+    }
+   }
+  },
+  "growth-max, options": {
+   "w": {
+    "SPY": 0.527,
+    "UPRO": 0.412,
+    "UGL": 0.061
+   },
+   "views": {
+    "hist_path": {
+     "IRA, yearly": {
+      "growth": 0.15050442018249702,
+      "median_cagr": 0.15050442018249702,
+      "p10_cagr": 0.15050442018249702,
+      "p90_cagr": 0.15050442018249702,
+      "p_loss": 0.0,
+      "median_maxdd": -0.7001092670245173,
+      "p_dd_over_75": 0.0,
+      "tax_paid_share": 0.0
+     },
+     "taxable, never rebalance": {
+      "growth": 0.1218682864212598,
+      "median_cagr": 0.1218682864212598,
+      "p10_cagr": 0.1218682864212598,
+      "p90_cagr": 0.1218682864212598,
+      "p_loss": 0.0,
+      "median_maxdd": -0.8600919423566173,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.2366255141776724
+     },
+     "taxable, yearly": {
+      "growth": 0.1331654833079517,
+      "median_cagr": 0.1331654833079517,
+      "p10_cagr": 0.1331654833079517,
+      "p90_cagr": 0.1331654833079517,
+      "p_loss": 0.0,
+      "median_maxdd": -0.7300754118786105,
+      "p_dd_over_75": 0.0,
+      "tax_paid_share": 0.21985214305648074
+     },
+     "taxable, yearly + harvest": {
+      "growth": 0.1344503562156048,
+      "median_cagr": 0.1344503562156048,
+      "p10_cagr": 0.1344503562156048,
+      "p90_cagr": 0.1344503562156048,
+      "p_loss": 0.0,
+      "median_maxdd": -0.7236051764963929,
+      "p_dd_over_75": 0.0,
+      "tax_paid_share": 0.21963387705549112
+     },
+     "taxable, 10pp band + harvest": {
+      "growth": 0.13194147667881923,
+      "median_cagr": 0.13194147667881923,
+      "p10_cagr": 0.13194147667881923,
+      "p90_cagr": 0.13194147667881923,
+      "p_loss": 0.0,
+      "median_maxdd": -0.7885268253901133,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.22338113369097712
+     },
+     "taxable mid bracket, yearly + harvest": {
+      "growth": 0.14054385379698436,
+      "median_cagr": 0.14054385379698436,
+      "p10_cagr": 0.14054385379698436,
+      "p90_cagr": 0.14054385379698436,
+      "p_loss": 0.0,
+      "median_maxdd": -0.714820201270528,
+      "p_dd_over_75": 0.0,
+      "tax_paid_share": 0.14038530555043213
+     }
+    },
+    "hist_mc": {
+     "IRA, yearly": {
+      "growth": 0.14686683810273515,
+      "median_cagr": 0.148863636633671,
+      "p10_cagr": 0.057350695582390275,
+      "p90_cagr": 0.24097827977708994,
+      "p_loss": 0.0195,
+      "median_maxdd": -0.5712503934429928,
+      "p_dd_over_75": 0.1094,
+      "tax_paid_share": 0.0
+     },
+     "taxable, never rebalance": {
+      "growth": 0.13151060951658736,
+      "median_cagr": 0.11781882768721641,
+      "p10_cagr": 0.036965484104910115,
+      "p90_cagr": 0.2584675104187368,
+      "p_loss": 0.0143,
+      "median_maxdd": -0.658021733860588,
+      "p_dd_over_75": 0.246,
+      "tax_paid_share": 0.22007477021810906
+     },
+     "taxable, yearly": {
+      "growth": 0.12803774532211395,
+      "median_cagr": 0.1293046489453943,
+      "p10_cagr": 0.0472748346759152,
+      "p90_cagr": 0.2143914082313613,
+      "p_loss": 0.0226,
+      "median_maxdd": -0.57811288729683,
+      "p_dd_over_75": 0.1192,
+      "tax_paid_share": 0.21030175316851085
+     },
+     "taxable, yearly + harvest": {
+      "growth": 0.1287789730068469,
+      "median_cagr": 0.13005611188982796,
+      "p10_cagr": 0.04816116162071904,
+      "p90_cagr": 0.21493963708562105,
+      "p_loss": 0.0222,
+      "median_maxdd": -0.5773884476317248,
+      "p_dd_over_75": 0.1166,
+      "tax_paid_share": 0.2100287876958019
+     },
+     "taxable, 10pp band + harvest": {
+      "growth": 0.1272237077013183,
+      "median_cagr": 0.12872664264335504,
+      "p10_cagr": 0.044599858067862284,
+      "p90_cagr": 0.21487916526416356,
+      "p_loss": 0.0264,
+      "median_maxdd": -0.5954298686421666,
+      "p_dd_over_75": 0.1658,
+      "tax_paid_share": 0.22348109507370184
+     },
+     "taxable mid bracket, yearly + harvest": {
+      "growth": 0.1356329739660504,
+      "median_cagr": 0.13718404521319108,
+      "p10_cagr": 0.05164972922936549,
+      "p90_cagr": 0.2246967085301605,
+      "p_loss": 0.0213,
+      "median_maxdd": -0.5749334575562268,
+      "p_dd_over_75": 0.1135,
+      "tax_paid_share": 0.1353226355435209
+     }
+    },
+    "options_mc": {
+     "IRA, yearly": {
+      "growth": 0.08918759229754343,
+      "median_cagr": 0.09159329339163043,
+      "p10_cagr": 0.005017146061098722,
+      "p90_cagr": 0.17536485521448297,
+      "p_loss": 0.0883,
+      "median_maxdd": -0.46718166141209055,
+      "p_dd_over_75": 0.089,
+      "tax_paid_share": 0.0
+     },
+     "taxable, never rebalance": {
+      "growth": 0.07364390928555165,
+      "median_cagr": 0.06507887871858246,
+      "p10_cagr": 0.0027895321418292896,
+      "p90_cagr": 0.16459291859438177,
+      "p_loss": 0.0924,
+      "median_maxdd": -0.5195915430878464,
+      "p_dd_over_75": 0.1016,
+      "tax_paid_share": 0.18653638709427495
+     },
+     "taxable, yearly": {
+      "growth": 0.07666690883414075,
+      "median_cagr": 0.07829697278269486,
+      "p10_cagr": 0.0011208005225211244,
+      "p90_cagr": 0.1551986816180707,
+      "p_loss": 0.0961,
+      "median_maxdd": -0.47659472842967104,
+      "p_dd_over_75": 0.0956,
+      "tax_paid_share": 0.18138119220923055
+     },
+     "taxable, yearly + harvest": {
+      "growth": 0.07698135550663987,
+      "median_cagr": 0.07862607766099637,
+      "p10_cagr": 0.0016371662259898603,
+      "p90_cagr": 0.15540695713665056,
+      "p_loss": 0.0953,
+      "median_maxdd": -0.4753289968608247,
+      "p_dd_over_75": 0.0947,
+      "tax_paid_share": 0.1808797716775784
+     },
+     "taxable, 10pp band + harvest": {
+      "growth": 0.07662851847389981,
+      "median_cagr": 0.07786019077716544,
+      "p10_cagr": 0.0008059302496269541,
+      "p90_cagr": 0.15703436266231324,
+      "p_loss": 0.098,
+      "median_maxdd": -0.48472399535870775,
+      "p_dd_over_75": 0.1017,
+      "tax_paid_share": 0.18708579785722437
+     },
+     "taxable mid bracket, yearly + harvest": {
+      "growth": 0.08161578526658073,
+      "median_cagr": 0.08349650566469705,
+      "p10_cagr": 0.002904956849655432,
+      "p90_cagr": 0.16289247841957805,
+      "p_loss": 0.0921,
+      "median_maxdd": -0.4720069075866398,
+      "p_dd_over_75": 0.0926,
+      "tax_paid_share": 0.11616933119187166
+     }
+    }
+   }
+  },
+  "growth-max, 50/50 history + options": {
+   "w": {
+    "UPRO": 0.485,
+    "QQQ": 0.363,
+    "TQQQ": 0.098,
+    "UGL": 0.054
+   },
+   "views": {
+    "hist_path": {
+     "IRA, yearly": {
+      "growth": 0.18977411246243006,
+      "median_cagr": 0.18977411246243006,
+      "p10_cagr": 0.18977411246243006,
+      "p90_cagr": 0.18977411246243006,
+      "p_loss": 0.0,
+      "median_maxdd": -0.8809556410526381,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.0
+     },
+     "taxable, never rebalance": {
+      "growth": 0.13935131437161924,
+      "median_cagr": 0.13935131437161924,
+      "p10_cagr": 0.13935131437161924,
+      "p90_cagr": 0.13935131437161924,
+      "p_loss": 0.0,
+      "median_maxdd": -0.9662743582773459,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.2380292528533287
+     },
+     "taxable, yearly": {
+      "growth": 0.1717235399725894,
+      "median_cagr": 0.1717235399725894,
+      "p10_cagr": 0.1717235399725894,
+      "p90_cagr": 0.1717235399725894,
+      "p_loss": 0.0,
+      "median_maxdd": -0.8873219432175143,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.22474527460552704
+     },
+     "taxable, yearly + harvest": {
+      "growth": 0.1738072608231,
+      "median_cagr": 0.1738072608231,
+      "p10_cagr": 0.1738072608231,
+      "p90_cagr": 0.1738072608231,
+      "p_loss": 0.0,
+      "median_maxdd": -0.883708886061991,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.22451091114482505
+     },
+     "taxable, 10pp band + harvest": {
+      "growth": 0.169113171366986,
+      "median_cagr": 0.169113171366986,
+      "p10_cagr": 0.169113171366986,
+      "p90_cagr": 0.169113171366986,
+      "p_loss": 0.0,
+      "median_maxdd": -0.9074552753909335,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.23918832469730106
+     },
+     "taxable mid bracket, yearly + harvest": {
+      "growth": 0.1799225076889011,
+      "median_cagr": 0.1799225076889011,
+      "p10_cagr": 0.1799225076889011,
+      "p90_cagr": 0.1799225076889011,
+      "p_loss": 0.0,
+      "median_maxdd": -0.8826124677251197,
+      "p_dd_over_75": 1.0,
+      "tax_paid_share": 0.14313474061847228
+     }
+    },
+    "hist_mc": {
+     "IRA, yearly": {
+      "growth": 0.17896768135632066,
+      "median_cagr": 0.18249421624292828,
+      "p10_cagr": 0.05477594020171281,
+      "p90_cagr": 0.3141278922390802,
+      "p_loss": 0.0337,
+      "median_maxdd": -0.7095190193928166,
+      "p_dd_over_75": 0.3857,
+      "tax_paid_share": 0.0
+     },
+     "taxable, never rebalance": {
+      "growth": 0.16270497761267436,
+      "median_cagr": 0.14785122912438148,
+      "p10_cagr": 0.036745817913557764,
+      "p90_cagr": 0.32794233640801085,
+      "p_loss": 0.0305,
+      "median_maxdd": -0.7664329607424888,
+      "p_dd_over_75": 0.5573,
+      "tax_paid_share": 0.23008071327760532
+     },
+     "taxable, yearly": {
+      "growth": 0.15850911515556956,
+      "median_cagr": 0.16052989286019176,
+      "p10_cagr": 0.044785123763998076,
+      "p90_cagr": 0.28355314751622573,
+      "p_loss": 0.0378,
+      "median_maxdd": -0.715713946998594,
+      "p_dd_over_75": 0.4017,
+      "tax_paid_share": 0.21889732642911303
+     },
+     "taxable, yearly + harvest": {
+      "growth": 0.15994159813686193,
+      "median_cagr": 0.16206340817158355,
+      "p10_cagr": 0.046010080448819685,
+      "p90_cagr": 0.2845756868752109,
+      "p_loss": 0.0367,
+      "median_maxdd": -0.7140881160347091,
+      "p_dd_over_75": 0.3966,
+      "tax_paid_share": 0.21841372122288938
+     },
+     "taxable, 10pp band + harvest": {
+      "growth": 0.16030302582737124,
+      "median_cagr": 0.1628098525571709,
+      "p10_cagr": 0.04329578073081917,
+      "p90_cagr": 0.28892371029284386,
+      "p_loss": 0.0399,
+      "median_maxdd": -0.7321649722997872,
+      "p_dd_over_75": 0.4489,
+      "tax_paid_share": 0.2291292886385327
+     },
+     "taxable mid bracket, yearly + harvest": {
+      "growth": 0.16719720801970162,
+      "median_cagr": 0.16985615839847384,
+      "p10_cagr": 0.04931458941153658,
+      "p90_cagr": 0.2957721523094359,
+      "p_loss": 0.0354,
+      "median_maxdd": -0.7125815139559258,
+      "p_dd_over_75": 0.3915,
+      "tax_paid_share": 0.14059240674017645
+     }
+    },
+    "options_mc": {
+     "IRA, yearly": {
+      "growth": 0.07468745664308997,
+      "median_cagr": 0.07723140482959853,
+      "p10_cagr": -0.03175518917822631,
+      "p90_cagr": 0.1891320029917296,
+      "p_loss": 0.1808,
+      "median_maxdd": -0.6195952361641354,
+      "p_dd_over_75": 0.2679,
+      "tax_paid_share": 0.0
+     },
+     "taxable, never rebalance": {
+      "growth": 0.06256714666588478,
+      "median_cagr": 0.057436126678187815,
+      "p10_cagr": -0.030690307179973488,
+      "p90_cagr": 0.1729992357235693,
+      "p_loss": 0.2007,
+      "median_maxdd": -0.6524283825837427,
+      "p_dd_over_75": 0.3035,
+      "tax_paid_share": 0.18842996808167206
+     },
+     "taxable, yearly": {
+      "growth": 0.06313284580495854,
+      "median_cagr": 0.06549024217031524,
+      "p10_cagr": -0.03515622086955493,
+      "p90_cagr": 0.16767965340840754,
+      "p_loss": 0.194,
+      "median_maxdd": -0.6284564629240821,
+      "p_dd_over_75": 0.2797,
+      "tax_paid_share": 0.18554059134170792
+     },
+     "taxable, yearly + harvest": {
+      "growth": 0.06385196832060787,
+      "median_cagr": 0.06620045821582174,
+      "p10_cagr": -0.03454872377228977,
+      "p90_cagr": 0.16848889077926704,
+      "p_loss": 0.1906,
+      "median_maxdd": -0.6254619620004807,
+      "p_dd_over_75": 0.2771,
+      "tax_paid_share": 0.18188652318724466
+     },
+     "taxable, 10pp band + harvest": {
+      "growth": 0.06416958497792116,
+      "median_cagr": 0.06584208518935951,
+      "p10_cagr": -0.03358282840219248,
+      "p90_cagr": 0.1691740970977725,
+      "p_loss": 0.1876,
+      "median_maxdd": -0.6300232016337365,
+      "p_dd_over_75": 0.2785,
+      "tax_paid_share": 0.18631468622840586
+     },
+     "taxable mid bracket, yearly + harvest": {
+      "growth": 0.06800433738147378,
+      "median_cagr": 0.07040836712422553,
+      "p10_cagr": -0.033248772134876425,
+      "p90_cagr": 0.17638228630232153,
+      "p_loss": 0.186,
+      "median_maxdd": -0.6231991876647045,
+      "p_dd_over_75": 0.273,
+      "tax_paid_share": 0.11668009009542929
+     }
+    }
+   }
+  }
+ },
+ "rebalance_frequency": {
+  "30 TQQQ/30 UGL/40 HYG (green)": {
+   "monthly": {
+    "hist_path": {
+     "IRA": 0.14859525459927578,
+     "top": 0.0964011789959799
+    },
+    "hist_mc": {
+     "IRA": 0.1470744344532732,
+     "top": 0.09483347884317235
+    }
+   },
+   "quarterly": {
+    "hist_path": {
+     "IRA": 0.15193251684371156,
+     "top": 0.10452776065003734
+    },
+    "hist_mc": {
+     "IRA": 0.1515262742677756,
+     "top": 0.10287438135549166
+    }
+   },
+   "yearly": {
+    "hist_path": {
+     "IRA": 0.1748271441546225,
+     "top": 0.14278283613732853
+    },
+    "hist_mc": {
+     "IRA": 0.15577714040440466,
+     "top": 0.12362579813666952
+    }
+   },
+   "every 2 years": {
+    "hist_path": {
+     "IRA": 0.16871311297404895,
+     "top": 0.1361164479297462
+    },
+    "hist_mc": {
+     "IRA": 0.15929035152557106,
+     "top": 0.12729600951814787
+    }
+   },
+   "never": {
+    "hist_path": {
+     "IRA": 0.12069699746292632,
+     "top": 0.09894382649608223
+    },
+    "hist_mc": {
+     "IRA": 0.1583334514087054,
+     "top": 0.13601304734523964
+    }
+   }
+  },
+  "growth-max, 50/50 history + options": {
+   "monthly": {
+    "hist_path": {
+     "IRA": 0.1740098553099512,
+     "top": 0.13793159904585978
+    },
+    "hist_mc": {
+     "IRA": 0.17390475325257662,
+     "top": 0.13594234822540008
+    }
+   },
+   "quarterly": {
+    "hist_path": {
+     "IRA": 0.17786250810077894,
+     "top": 0.14939746737597454
+    },
+    "hist_mc": {
+     "IRA": 0.17698637268167022,
+     "top": 0.1452592143751189
+    }
+   },
+   "yearly": {
+    "hist_path": {
+     "IRA": 0.18977411246243006,
+     "top": 0.1738072608231
+    },
+    "hist_mc": {
+     "IRA": 0.17896768135632066,
+     "top": 0.15994159813686193
+    }
+   },
+   "every 2 years": {
+    "hist_path": {
+     "IRA": 0.18966840494944537,
+     "top": 0.1735190676463842
+    },
+    "hist_mc": {
+     "IRA": 0.17949340054832516,
+     "top": 0.16113189711385512
+    }
+   },
+   "never": {
+    "hist_path": {
+     "IRA": 0.14954568081882233,
+     "top": 0.13952784053668577
+    },
+    "hist_mc": {
+     "IRA": 0.17868428240665557,
+     "top": 0.1634546506666785
+    }
+   }
+  },
+  "growth-max, options": {
+   "monthly": {
+    "hist_path": {
+     "IRA": 0.14406419154254937,
+     "top": 0.11038725482299996
+    },
+    "hist_mc": {
+     "IRA": 0.14432841517474357,
+     "top": 0.11075548767621506
+    }
+   },
+   "quarterly": {
+    "hist_path": {
+     "IRA": 0.14495566323288842,
+     "top": 0.11806692464614953
+    },
+    "hist_mc": {
+     "IRA": 0.145853901710803,
+     "top": 0.11728388652506494
+    }
+   },
+   "yearly": {
+    "hist_path": {
+     "IRA": 0.15050442018249702,
+     "top": 0.1344503562156048
+    },
+    "hist_mc": {
+     "IRA": 0.14686683810273515,
+     "top": 0.1287789730068469
+    }
+   },
+   "every 2 years": {
+    "hist_path": {
+     "IRA": 0.158778587991173,
+     "top": 0.14169459794234393
+    },
+    "hist_mc": {
+     "IRA": 0.1472540537322642,
+     "top": 0.12958655418320097
+    }
+   },
+   "never": {
+    "hist_path": {
+     "IRA": 0.13235814554441283,
+     "top": 0.12205577735148075
+    },
+    "hist_mc": {
+     "IRA": 0.1469147760400704,
+     "top": 0.13212017456441125
+    }
+   }
+  }
+ },
+ "green_tax_drag": {
+  "as modeled": {
+   "hist_path": 0.14278283613732853,
+   "hist_mc": 0.12362579813666952,
+   "options_mc": 0.02519574386807438
+  },
+  "HYG income taxed like deferred gains": {
+   "hist_path": 0.15123607491614638,
+   "hist_mc": 0.13180050484204486,
+   "options_mc": 0.034707883358411774
+  },
+  "UGL not marked to market": {
+   "hist_path": 0.14356350164344037,
+   "hist_mc": 0.1254956970824299,
+   "options_mc": 0.025175937735959084
+  }
+ }
+}

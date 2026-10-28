@@ -104,3 +104,5 @@ Run: `python omega/study.py && python omega/plots.py` (numpy, pandas, scipy ≥ 
   historical copula.
 - **Compounded-growth frontiers:** realised growth vs the arithmetic mean.
 - **Walk-forward test:** a yearly refit on the trailing 10 years, 1997–2026.
+- **Taxable accounts:** [`TAXABLE.md`](TAXABLE.md) covers key portfolios after tax under history and the options
+  view, how often to rebalance, and growth-maximising mixes for a taxable account.
