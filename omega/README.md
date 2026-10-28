@@ -93,5 +93,7 @@ Smaller issues:
 
   The in-sample Ω-maximiser loses most of its edge out of sample (classic estimation error in ratio optimisation).
 
+How the joint distribution (marginals + copula) was built: [`COPULA.md`](COPULA.md).
+
 Run: `python omega/study.py && python omega/plots.py` (numpy, pandas, scipy ≥ 1.9, matplotlib).
 `results/summary.json` has every number, plus frontier weights.
